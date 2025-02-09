@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pyspectrogram"
+version = "0.1.0"
+description = "Play around with audio streams"
+authors = ["PonyM <dev@lksch.ch>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+numpy = "^2.2.2"
+click = "^8.1.8"
+sounddevice = "^0.5.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+pyspectrogram = "pyspectrogram.efx:cli"
